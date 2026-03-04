@@ -1,37 +1,54 @@
-*{ box-sizing: border-box;}
-
+* {
+  box-sizing: border-box;
+}
 
 /* Typographies / Couleurs (exemples : titres, paragraphes, liens, etc.)
 ========================================================================== */
 
-body{
-	background-color: aliceblue;
+body {
+  background-color: aliceblue;
+}
+
+@font-face {
+  font-family: "Agbalumo";
+  src: url("../fonts/Agbalumo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
 }
 
 /* Mise en page (positionnement)
 ========================================================================== */
 
-.container{
-	width: 90%;
-	max-width: 1200px;
-	margin: 0 auto;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+h1 {
+  font-family: "Agbalumo", sans-serif;
+}
 
 /* Header / Navigations / Footer 
 ========================================================================== */
 
-
-
 /* Composantes générales (exemples : section, cartes, tableaux, etc.)
 ========================================================================== */
-
-
 
 /* Formulaires
 ========================================================================== */
 
-
-
 /* Règles spécifiques aux pages
 ========================================================================== */
+
+/* Media Queries (pour la réactivité)
+========================================================================== */
+/*Du plus haut/large au plus petit (Desktop first)*/
+/*Ceux plus haut s'appliquent encore si pas écrasé par ceux plus bas, donc pas besoin de tout remettre*/
