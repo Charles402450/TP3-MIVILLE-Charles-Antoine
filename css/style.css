@@ -39,6 +39,58 @@ h1 {
 /* Header / Navigations / Footer 
 ========================================================================== */
 
+.flexHead {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav {
+  text-align: right;
+  padding: 0.5% 2%;
+  width: 50%;
+}
+
+nav li {
+  display: inline-block;
+  text-align: center;
+  margin: 0% 1%;
+  padding: 0% 1%;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+nav li :hover {
+  text-decoration: underline;
+}
+nav a {
+  color: #d4c254;
+  font-family: "Lora", serif;
+  font-weight: 600;
+}
+nav a:hover {
+  transition:
+    color 0.4s,
+    0.4s;
+  color: #e3b177;
+  font-family: "Lora", serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navActive {
+  color: #e3b177;
+  font-family: "Lora", serif;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.navActive:hover {
+  transition:
+    color 0.4s,
+    0.4s;
+  color: #e3b177;
+  font-family: "Lora", serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 /* Composantes générales (exemples : section, cartes, tableaux, etc.)
 ========================================================================== */
 
