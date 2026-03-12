@@ -100,8 +100,32 @@ nav a:hover {
   color: red;
 }
 
-/* Règles spécifiques aux pages
+/* Page Restaurant - Grid
 ========================================================================== */
+
+.liste-img {
+  padding: 0;
+  list-style-type: none;
+}
+
+.restaurantGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.restaurantGrid > li {
+  margin: 10px;
+}
+
+.restaurantGrid > li > img {
+  border: 2px solid black;
+  max-width: 100%;
+}
+
+.span-2x2 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
 
 /* Media Queries (pour la réactivité)
 ========================================================================== */
