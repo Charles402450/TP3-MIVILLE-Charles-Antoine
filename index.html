@@ -12,30 +12,50 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="favicon.png" />
   </head>
-  <header>
-    <div class="flexHead">
-      <a href="index.html"
-        ><img src="favicon.png" alt="Nom du restaurant" />
-      </a>
-      <nav>
-        <ul class="flexHead">
-          <li>
-            <a href="index.html">Page d'accueil</a>
-          </li>
-          <li><a href="ma-commande.html">Ma commande</a></li>
-          <li><a href="reservation.html">Réservation</a></li>
-          <li><a href="restaurant.html">Restaurant</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
   <body>
-    <main><h1>Nom du restaurant</h1></main>
+    <header>
+      <div class="flexHead">
+        <a href="index.html"
+          ><img src="favicon.png" alt="Nom du restaurant" />
+        </a>
+        <nav>
+          <ul class="flexHead">
+            <li>
+              <a href="index.html">Page d'accueil</a>
+            </li>
+            <li><a href="ma-commande.html">Ma commande</a></li>
+            <li><a href="reservation.html">Réservation</a></li>
+            <li><a href="restaurant.html">Restaurant</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="accueil-main" id="accueil-main">
+        <div class="accueil-main-1">
+          <h1>Nom du restaurant</h1>
+          <p>
+            Courte description du restaurant. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.
+          </p>
+          <div>
+            <button>Commander en ligne</button><button>Réserver</button>
+          </div>
+        </div>
+        <div class="accueil-main-2">
+          <img src="media/singe.jpg" alt="Singe" />
+        </div>
+      </section>
+      <section id="accueil-temoignages"></section>
+    </main>
+
+    <footer>
+      <div class="flexFooter">
+        <p>Réalisé par : Charles-Antoine Miville</p>
+        <p>Réseaux sociaux</p>
+      </div>
+    </footer>
   </body>
-  <footer>
-    <div class="flexFooter">
-      <p>Réalisé par : Charles-Antoine Miville</p>
-      <p>Réseaux sociaux</p>
-    </div>
-  </footer>
 </html>

@@ -26,8 +26,8 @@ body {
 /* Mise en page (positionnement)
 ========================================================================== */
 
-.container {
-  width: 90%;
+body {
+  background-color: aliceblue;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -115,16 +115,47 @@ nav a:hover {
 
 .restaurantGrid > li {
   margin: 10px;
+  display: flex;
 }
 
 .restaurantGrid > li > img {
   border: 2px solid black;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .span-2x2 {
   grid-column: span 2;
   grid-row: span 2;
+}
+
+/* Page d'accueil
+========================================================================== */
+
+.accueil-main {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.accueil-main-1 {
+  width: 34%;
+  max-width: 34%;
+}
+
+.accueil-main-1 > button {
+}
+
+.accueil-main-2 {
+  width: 66%;
+  max-width: 66%;
+}
+
+.accueil-main-2 > img {
+  width: 100%;
+  height: auto;
 }
 
 /* Media Queries (pour la réactivité)
