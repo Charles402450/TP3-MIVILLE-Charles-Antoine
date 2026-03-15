@@ -158,6 +158,24 @@ nav a:hover {
   height: auto;
 }
 
+.accueil-temoignages {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.accueil-temoignages > div {
+  background-color: grey;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.accueil-temoignages img {
+  border-radius: 100%;
+}
+
 /* Media Queries (pour la réactivité)
 ========================================================================== */
 /*Du plus haut/large au plus petit (Desktop first)*/
