@@ -39,6 +39,10 @@ h1 {
 /* Header / Navigations / Footer 
 ========================================================================== */
 
+header {
+  background-color: #fca926;
+}
+
 .flexHead {
   display: flex;
   justify-content: space-around;
