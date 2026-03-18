@@ -28,12 +28,17 @@ body {
 
 body {
   background-color: aliceblue;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 h1 {
   font-family: "Agbalumo", sans-serif;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
 }
 
 /* Header / Navigations / Footer 
@@ -43,56 +48,90 @@ header {
   background-color: #fca926;
 }
 
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.headerLogo {
+  max-width: 200px;
+  width: 200px;
+  padding: 15px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #fca926;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fcf9f6;
+}
+
+hr {
+  border: 1px solid #fcf9f6;
+}
+
 .flexHead {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
-nav {
-  text-align: right;
-  padding: 0.5% 2%;
-  width: 50%;
+
+.flexFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav li {
-  display: inline-block;
-  text-align: center;
-  margin: 0% 1%;
-  padding: 0% 1%;
-  font-size: 1.5rem;
-  font-weight: 500;
+  list-style-type: none;
 }
-nav li :hover {
-  text-decoration: underline;
-}
+
 nav a {
-  color: #d4c254;
-  font-family: "Lora", serif;
+  color: #fff5e6;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.1rem;
   font-weight: 600;
+  border: 0.2rem #fcf9f6 solid;
+  margin: 0px 5px 0px 5px;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 5px 10px 5px 10px;
+  margin: 0px 10px 0px 10px;
 }
+
 nav a:hover {
   transition:
     color 0.4s,
     0.4s;
-  color: #e3b177;
-  font-family: "Lora", serif;
-  font-weight: 600;
-  text-decoration: none;
+  color: #fca926;
+  background-color: #fcf9f6;
 }
+
 .navActive {
-  color: #e3b177;
-  font-family: "Lora", serif;
-  font-weight: 600;
-  text-decoration: underline;
+  color: #fca926;
+  border: 0.2rem #fcf9f6 solid;
+  background-color: #fcf9f6;
 }
+
 .navActive:hover {
   transition:
     color 0.4s,
     0.4s;
-  color: #e3b177;
-  font-family: "Lora", serif;
-  font-weight: 600;
-  text-decoration: none;
+  color: #fca926;
 }
 
 /* Composantes générales (exemples : section, cartes, tableaux, etc.)

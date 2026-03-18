@@ -14,14 +14,18 @@
   </head>
   <body>
     <header>
-      <div class="flexHead">
+      <div class="flexHead container">
         <a href="index.html"
-          ><img src="media/LogoChezGato_Horizontal.png" alt="Chez Gato" />
+          ><img
+            src="media/LogoChezGato_Horizontal.png"
+            class="headerLogo"
+            alt="Chez Gato"
+          />
         </a>
         <nav>
           <ul class="flexHead">
             <li>
-              <a href="index.html">Page d'accueil</a>
+              <a href="index.html" class="navActive">Page d'accueil</a>
             </li>
             <li><a href="ma-commande.html">Ma commande</a></li>
             <li><a href="reservation.html">Réservation</a></li>
@@ -32,23 +36,28 @@
     </header>
 
     <main>
-      <section class="accueil-main" id="accueil-main">
+      <section class="accueil-main container" id="accueil-main">
         <div class="accueil-main-1">
-          <h1>Nom du restaurant</h1>
+          <h1>Restaurant Chez Gato</h1>
           <p>
-            Courte description du restaurant. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua.
+            Le restaurant Chez Gato propose une variété de desserts délicieux à
+            manger sur place ou à emporter. Notre menu comprend des gâteaux, des
+            tartes, des biscuits et d'autres douceurs sucrées, tous préparés
+            avec des ingrédients de haute qualité et une attention particulière
+            aux détails. Que vous cherchiez un dessert pour une occasion
+            spéciale ou simplement pour satisfaire votre envie de sucré, Chez
+            Gato a quelque chose pour tout le monde. Venez nous rendre visite et
+            goûtez à nos délicieuses créations!
           </p>
           <div>
             <button>Commander en ligne</button><button>Réserver</button>
           </div>
         </div>
         <div class="accueil-main-2">
-          <img src="media/singe.jpg" alt="Singe" />
+          <img src="media/CheesecakeBanane.jpg" alt="Singe" />
         </div>
       </section>
-      <section class="accueil-temoignages" id="accueil-temoignages">
+      <section class="accueil-temoignages container" id="accueil-temoignages">
         <div>
           <img src="" alt="" />
           <p>Nom du client</p>
@@ -101,9 +110,22 @@
     </main>
 
     <footer>
-      <div class="flexFooter">
-        <p>Réalisé par : Charles-Antoine Miville</p>
-        <p>Réseaux sociaux</p>
+      <div class="container">
+        <div class="flexFooter">
+          <p>Réalisé par : Charles-Antoine Miville</p>
+          <div class="flexFooter">
+            <p>Réseaux sociaux</p>
+            <p>Facebook Linked. Twit. Inst.</p>
+          </div>
+        </div>
+        <hr />
+        <div class="flexFooter">
+          <p>Intégration web 1</p>
+          <div class="flexFooter">
+            <p>Cégep de Trois-Rivières</p>
+            <p>Hiver 2026</p>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
