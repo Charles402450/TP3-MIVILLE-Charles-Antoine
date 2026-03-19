@@ -32,6 +32,20 @@ body {
 
 h1 {
   font-family: "Agbalumo", sans-serif;
+  font-size: 2.3rem;
+  color: #fca926;
+}
+
+h2 {
+  font-family: "Agbalumo", sans-serif;
+  font-size: 2rem;
+  color: #fca926;
+}
+
+h3 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
 }
 
 p {
@@ -51,6 +65,8 @@ header {
 header .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .headerLogo {
@@ -62,6 +78,8 @@ header .container {
 main {
   max-width: 1200px;
   margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 footer {
@@ -71,6 +89,8 @@ footer {
 footer .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 footer p {
@@ -78,6 +98,12 @@ footer p {
   font-size: 1rem;
   font-weight: 600;
   color: #fcf9f6;
+}
+
+.SocialMediaIcon {
+  max-width: 30px;
+  width: 30px;
+  margin: 5px 0px 0px 10px;
 }
 
 hr {
@@ -184,21 +210,42 @@ nav a:hover {
 }
 
 .accueil-main-1 {
-  width: 34%;
-  max-width: 34%;
+  width: 40%;
+  max-width: 40%;
 }
 
-.accueil-main-1 > button {
+.accueil-main-1 button {
+  background-color: #fca926;
+  border-color: #fca926;
+  color: #fcf9f6;
+  font-family: "Outfit", sans-serif;
+  padding: 5px 10px 10px 10px;
+  border-radius: 4px;
+  margin: 6px 15px 6px 0px;
+}
+
+.accueil-main-1 button:hover {
+  cursor: pointer;
+}
+
+.accueil-main-1 span {
+  text-decoration: underline;
+  text-decoration-color: #fcf9f6;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
 .accueil-main-2 {
-  width: 66%;
-  max-width: 66%;
+  width: 60%;
+  max-width: 60%;
 }
 
 .accueil-main-2 > img {
   width: 100%;
   height: auto;
+  padding-left: 50px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .accueil-temoignages {
@@ -208,15 +255,44 @@ nav a:hover {
 }
 
 .accueil-temoignages > div {
-  background-color: grey;
+  background-color: #fca926;
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 30px;
   margin-right: 30px;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .accueil-temoignages img {
   border-radius: 100%;
+  width: 50px;
+  max-width: 50px;
+  height: 50px;
+  max-height: 50px;
+  margin-right: 12px;
+  margin-top: 10px;
+}
+
+.accueil-temoignages p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+}
+
+.accueil-temoignages h4 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  position: relative;
+  top: 5px;
+}
+
+.clientSatisfaitFlex {
+  display: flex;
+  align-items: center;
 }
 
 /* Media Queries (pour la réactivité)
