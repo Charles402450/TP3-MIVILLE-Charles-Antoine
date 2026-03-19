@@ -295,6 +295,61 @@ nav a:hover {
   align-items: center;
 }
 
+/* Réservation
+========================================================================== */
+
+.reservationFormFlex1 {
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 30px;
+  gap: 50px;
+}
+
+.reservationFormFlex2 {
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+  max-width: 300px;
+}
+
+.reservationFormFlex3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+}
+
+form {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+form label {
+  margin: 0px 10px 0px 0px;
+}
+
+input[type="radio"] {
+  margin: 5px 6px 5px 0px;
+}
+
+form select {
+  border: 2px solid #fca926;
+  border-radius: 2px;
+}
+
+form fieldset {
+  border: 2px solid #fca926;
+  border-radius: 2px;
+}
+
+form fieldset {
+  border: 2px solid #fca926;
+  border-radius: 2px;
+}
+
 /* Media Queries (pour la réactivité)
 ========================================================================== */
 /*Du plus haut/large au plus petit (Desktop first)*/
