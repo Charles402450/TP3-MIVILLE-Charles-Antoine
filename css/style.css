@@ -5,10 +5,6 @@
 /* Typographies / Couleurs (exemples : titres, paragraphes, liens, etc.)
 ========================================================================== */
 
-body {
-  background-color: aliceblue;
-}
-
 @font-face {
   font-family: "Agbalumo";
   src: url("../fonts/Agbalumo-Regular.ttf") format("truetype");
@@ -28,6 +24,9 @@ body {
 
 body {
   background-color: #fcf9f6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -80,6 +79,7 @@ main {
   margin: 0 auto;
   padding-left: 5%;
   padding-right: 5%;
+  flex-grow: 1;
 }
 
 footer {
@@ -87,6 +87,14 @@ footer {
 }
 
 footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.container {
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 5%;
@@ -348,6 +356,51 @@ form fieldset {
 form fieldset {
   border: 2px solid #fca926;
   border-radius: 2px;
+}
+
+/* Restaurant
+========================================================================== */
+
+.restaurantContact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.restaurantContact h2 {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.restaurantContact p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.restaurantContact iframe {
+  margin: 30px 0px 70px 20px;
+}
+
+/* Ma commande
+========================================================================== */
+
+.maCommandeGrid {
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 30px;
+  gap: 50px;
+}
+
+.maCommandeSection1 {
+  max-width: 60%;
+  width: 60%;
+}
+
+.maCommandeSection2 {
+  max-width: 40%;
+  width: 40%;
 }
 
 /* Media Queries (pour la réactivité)
