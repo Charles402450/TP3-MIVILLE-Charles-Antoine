@@ -1,7 +1,9 @@
 # TP3-MIVILLE-Charles-Antoine
 
-# Titre
+## Lien vers le répositoire:
 
-## Sous-titre
+### https://github.com/Charles402450/TP3-MIVILLE-Charles-Antoine
 
-### xxxxx
+## Petite touche bonus:
+
+### - Deux versions du logo pour s'adapter sur mobile

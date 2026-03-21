@@ -155,6 +155,11 @@ nav a:hover {
   background-color: #fcf9f6;
 }
 
+.commander {
+  font-weight: 900;
+  border-radius: 0px;
+}
+
 .navActive {
   color: #fca926;
   border: 0.2rem #fcf9f6 solid;
@@ -403,7 +408,225 @@ form fieldset {
   width: 40%;
 }
 
+table {
+  width: 100%;
+}
+
+thead {
+  padding: 10px;
+  width: 100%;
+}
+
+tr {
+  text-align: left;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+}
+
+tr:nth-child(even) {
+  background-color: #ffdca4;
+}
+
+tr:nth-child(odd) {
+  background-color: #fcf9f6;
+}
+
+th {
+  background-color: #ffdca4;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.12rem;
+  font-weight: 400;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+td {
+  padding: 10px 20px 10px 10px;
+  width: 100%;
+}
+
+.maCommande1 {
+  background-color: #ffdca4;
+  align-self: center;
+  padding: 20px 40px 40px 40px;
+}
+
+.maCommande1 button {
+  background-color: #fca926;
+  border-color: #fca926;
+  color: #fcf9f6;
+  font-family: "Outfit", sans-serif;
+  padding: 5px 10px 10px 10px;
+  border-radius: 4px;
+  margin: 6px 15px 6px 0px;
+}
+
+.maCommande1 button:hover {
+  cursor: pointer;
+}
+
 /* Media Queries (pour la réactivité)
 ========================================================================== */
 /*Du plus haut/large au plus petit (Desktop first)*/
 /*Ceux plus haut s'appliquent encore si pas écrasé par ceux plus bas, donc pas besoin de tout remettre*/
+
+.headerLogoHorizontal {
+  display: block;
+}
+
+.headerLogoSmall {
+  display: none;
+}
+
+.mobileMenuBurger {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .headerLogoHorizontal {
+    display: none;
+  }
+  .headerLogoSmall {
+    display: block;
+  }
+  .headerLogo {
+    max-width: 75px;
+    width: 75px;
+    padding: 15px 0px 15px 0px;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  nav a:hover {
+    display: none;
+  }
+
+  .navActive {
+    display: none;
+  }
+
+  .navActive:hover {
+    display: none;
+  }
+
+  .mobileMenuBurger {
+    display: block;
+    width: 50px;
+    max-width: 50;
+    padding: 0px 0px 20px 0px;
+  }
+
+  .accueil-main {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .accueil-main-1 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .accueil-main-2 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .accueil-main-2 > img {
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .accueil-temoignages {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .restaurantContact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .restaurantContact iframe {
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+  }
+
+  .restaurantFullWidth {
+    width: 100%;
+  }
+
+  .restaurantGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .span-2x2 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .headerLogoHorizontal {
+    display: none;
+  }
+
+  .headerLogoSmall {
+    display: block;
+  }
+
+  .headerLogo {
+    max-width: 50px;
+    width: 50px;
+    padding: 15px 0px 15px 0px;
+  }
+
+  .flexHead {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .reservationFormFlex1 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+
+  .reservationFormFlex2 {
+    max-width: 100%;
+  }
+
+  .reservationFormMobile {
+    padding: 20px 0px 0px 0px;
+  }
+
+  .maCommandeGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .maCommandeSection1 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .maCommandeSection2 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .flexFooter p {
+    font-family: "Outfit", sans-serif;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    font-weight: 500;
+  }
+
+  .restaurantGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

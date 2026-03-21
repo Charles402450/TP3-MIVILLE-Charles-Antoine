@@ -19,7 +19,11 @@
         <a href="index.html"
           ><img
             src="media/LogoChezGato_Horizontal.png"
-            class="headerLogo"
+            class="headerLogo headerLogoHorizontal"
+            alt="Chez Gato"
+          /><img
+            src="media/LogoChezGato_Small.png"
+            class="headerLogo headerLogoSmall"
             alt="Chez Gato"
           />
         </a>
@@ -33,9 +37,14 @@
             </li>
             <li><a href="restaurant.html">Restaurant</a></li>
             <li>
-              <a href="ma-commande.html">Ma commande</a>
+              <a href="ma-commande.html" class="commander">Commander</a>
             </li>
           </ul>
+          <img
+            src="media/mobileMenuBurger.png"
+            class="mobileMenuBurger"
+            alt="Menu Burger"
+          />
         </nav>
       </div>
     </header>
@@ -49,7 +58,7 @@
             >
             <input type="text" id="prenom" name="prenom" required />
           </div>
-          <div class="reservationFormFlex2">
+          <div class="reservationFormFlex2 reservationFormMobile">
             <label for="nom"
               >Nom:<span class="required" aria-hidden="true">*</span></label
             >
@@ -65,7 +74,7 @@
             >
             <input type="tel" id="telephone" name="telephone" required />
           </div>
-          <div class="reservationFormFlex2">
+          <div class="reservationFormFlex2 reservationFormMobile">
             <label for="nombre-personnes"
               >Nombre de personnes:<span class="required" aria-hidden="true"
                 >*</span
@@ -91,7 +100,7 @@
             >
             <input type="date" name="date" required />
           </div>
-          <div class="reservationFormFlex2">
+          <div class="reservationFormFlex2 reservationFormMobile">
             <fieldset id="type-reservation">
               <legend>Type de réservation</legend>
               <label for="salle-a-manger">
@@ -130,7 +139,7 @@
               </select>
             </fieldset>
           </div>
-          <div class="reservationFormFlex2">
+          <div class="reservationFormFlex2 reservationFormMobile">
             <label for="commentaire">Commentaire:</label>
             <input type="textarea" id="commentaire" name="commentaire" />
           </div>
@@ -141,7 +150,7 @@
             <label for="email">Adresse courriel:</label>
             <input type="email" id="email" name="email" />
           </div>
-          <div class="reservationFormFlex3">
+          <div class="reservationFormFlex3 reservationFormMobile">
             <input id="infolettre" type="checkbox" name="infolettre" />
             <label for="infolettre"
               >Je désire recevoir l'infolettre mensuelle du restaurant</label

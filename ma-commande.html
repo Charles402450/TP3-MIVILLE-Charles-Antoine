@@ -18,7 +18,11 @@
         <a href="index.html"
           ><img
             src="media/LogoChezGato_Horizontal.png"
-            class="headerLogo"
+            class="headerLogo headerLogoHorizontal"
+            alt="Chez Gato"
+          /><img
+            src="media/LogoChezGato_Small.png"
+            class="headerLogo headerLogoSmall"
             alt="Chez Gato"
           />
         </a>
@@ -30,9 +34,16 @@
             <li><a href="reservation.html">Réservation</a></li>
             <li><a href="restaurant.html">Restaurant</a></li>
             <li>
-              <a href="ma-commande.html" class="navActive">Ma commande</a>
+              <a href="ma-commande.html" class="navActive commander"
+                >Commander</a
+              >
             </li>
           </ul>
+          <img
+            src="media/mobileMenuBurger.png"
+            class="mobileMenuBurger"
+            alt="Menu Burger"
+          />
         </nav>
       </div>
     </header>
@@ -40,7 +51,7 @@
       <section>
         <h1>Ma commande</h1>
         <h2>Tartes</h2>
-        <table class="container" id="Tartes">
+        <table id="Tartes">
           <thead>
             <tr>
               <th scope="col">Nom du plat</th>
@@ -67,7 +78,7 @@
           </tbody>
         </table>
         <h2>Gâteaux</h2>
-        <table class="container" id="Gâteaux">
+        <table id="Gâteaux">
           <thead>
             <tr>
               <th scope="col">Nom du plat</th>
@@ -94,7 +105,7 @@
           </tbody>
         </table>
         <h2>Bouchées</h2>
-        <table class="container" id="Bouchées">
+        <table id="Bouchées">
           <thead>
             <tr>
               <th scope="col">Nom du plat</th>
@@ -121,10 +132,11 @@
           </tbody>
         </table>
       </section>
-      <section>
+      <section class="maCommande1">
         <h2>Détails</h2>
         <h3><span>Sous-total:</span> <span>29,96$</span></h3>
         <h3><span>Taxes:</span> <span>4,49$</span></h3>
+        <hr />
         <h3><span>Total:</span> <span>34,45$</span></h3>
         <button>Commander</button>
       </section>
